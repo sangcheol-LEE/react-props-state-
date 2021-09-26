@@ -4,22 +4,23 @@ import "../../src/main.css"
 
 class Children extends React.Component {
 
+  constructor() {
+    super ()
+
+    this.state={
+      titleColor: "red",
+      titleSize: "50px",
+      };
+  }
+
   render() {
     return (
-    <div className="mainInner">
-    <h1 className="mainText">
-      {this.props.name}
-      ({this.props.age}살)
-      </h1>
-      
-    <form className="inputBox">
-      <input className="idText"type="text"/>
-      <input className="passWordText"type="password"/>
-      <button onClick={this.props.introduce}>Click</button>
-    </form>
-   </div>
-  )
-  };
+      <h1 style={{color : this.state.titleColor,
+                  fontSize: this.state.titleSize}}>
+        Hello world 
+        </h1>
+      )
+    };
   }
 
 
