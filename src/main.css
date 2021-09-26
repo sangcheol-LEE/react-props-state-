@@ -1,17 +1,7 @@
-.mainText {
-  text-align: center;
-  font-size: 50px;
+.switchOn {
+  color: blue;
 }
 
-.inputBox {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin: 0 auto;
-}
-
-.mainInner {
-  border: 2px solid #000;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+.switchOff {
+  color: black;
 }
